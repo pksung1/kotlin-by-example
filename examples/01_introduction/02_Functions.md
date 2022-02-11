@@ -27,18 +27,18 @@ fun main() {
 }
 ```
 
-1. A simple function that takes a parameter of type `String` and returns `Unit` (i.e., no return value).
-2. A function that takes a second [optional parameter with default value](https://kotlinlang.org/docs/reference/functions.html#default-arguments) `Info`. The return type is omitted, meaning that it's actually `Unit`.
-3. A function that returns an integer.
-4. A single-expression function that returns an integer (inferred).
-5. Calls the first function with the argument `Hello`.
-6. Calls the function with two parameters, passing values for both of them.
-7. Calls the same function omitting the second one. The default value `Info` is used. 
-8. Calls the same function using [named arguments](https://kotlinlang.org/docs/reference/functions.html#named-arguments) and changing the order of the arguments.
-9. Prints the result of the `sum` function call.
-10. Prints the result of the `multiply` function call.
+1. 하나의 파라미터 message: `String` 을 받고 `Unit` 타입을 리턴하는 함수 (i.e., no return value).
+2. 함수의 두번쨰 인자는 [함수인자에 기본값 주기](https://kotlinlang.org/docs/reference/functions.html#default-arguments) `Info` 를 준 함수. 리턴 타입은 Unit으로, 코드엔 작성되어 있지 않으나 생략되어있다. [Unit-returning functions](https://kotlinlang.org/docs/functions.html#unit-returning-functions)
+3. Int 타입을 리턴하는 함수이다.
+4. 한줄로 표현한 표현식(single-expression), Int 타입을 리턴한다 (추론식)
+5. 1번 함수 호출 `Hello`.
+6. 2번 함수 호출, 두개의 값을 넘기고있다.
+7. 2번 함수 호출, 두번쨰 인자를 제외하고 첫번째 인자만 넣어 실행한다. 두번째 인자의 기본값은 `Info` 이다.
+8. 2번 함수 호출, 파라미터의 이름에 값을 넣어 실행하고 있다. 순서가 바뀌었으나 이름을 지정해 값을 넘기기 때문에 문제가없다. [named arguments](https://kotlinlang.org/docs/reference/functions.html#named-arguments)
+9. `sum` 함수의 결과를 출력한다.
+10. `multiply` 함수의 결과를 출력한다.
 
-### Infix Functions
+### Infix 함수
 
 Member functions and extensions with a single parameter can be turned into [infix functions](https://kotlinlang.org/docs/reference/functions.html#infix-notation).
 
